@@ -1,33 +1,28 @@
 let bici1 = {
     "colore": "rosso",
-    "peso-kg": 10,
-    "prezzo": 500,
+    "peso": 10,
 }
 
 let bici2 = {
     "colore": "nero",
-    "peso-kg": 15,
+    "peso": 15,
     "prezzo": 300,
 }
 
 let bici3 = {
     "colore": "giallo",
-    "peso-kg": 8,
-    "prezzo": 750,
+    "peso": 8,
 }
 
 let bici4 = {
     "colore": "rosa",
-    "peso-kg": 9,
-    "prezzo": 600,
+    "peso": 9,
 }
 
 let bici5 = {
     "colore": "azzurro",
-    "peso-kg": 12,
-    "prezzo": 400,
+    "peso": 12,
 }
-
 
 
 
@@ -41,3 +36,13 @@ let biciclette = [
 
 
 console.log(biciclette);
+
+let lightestBike = biciclette[0]
+
+for (let i = 0; i < biciclette.length; i++){
+    if (biciclette[i].peso < lightestBike.peso){
+        lightestBike = biciclette[i]
+    } 
+    
+} 
+console.log(lightestBike)
